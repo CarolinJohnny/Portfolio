@@ -1,0 +1,114 @@
+/*@import url ('https://fonts.googleapis.com/css?family=Roboto'); */
+
+body {
+  font-family: 'Coda', sans-serif;
+  color: #3550a0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  transition: min-height 0.3s;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 50%;
+  float: left;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.page-name {
+  font-weight: 300;
+  float: right;
+  width: 40%;
+}
+
+.page-name .text-right {
+  text-align: right;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #3550a0;
+  margin-bottom: 10px;
+}
+
+.container-center {
+  width: 100%;
+  position: relative;
+  background-image: url("Birds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  border-radius: 3em;
+}
+
+.further {
+  margin-left: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+}
+
+.picture {
+  width: 100%;
+  height: 80%;
+  border-radius: 2em;
+}
+
+.column {
+  display: flex;
+  flex: 33%;
+  padding: 3px;
+}
+
+figure {
+  text-align: center;
+  width: 100%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+figure a {
+  text-transform: uppercase;
+  color: #3550a0;
+}
+
+@media screen and (max-width: 570px) {
+  .row {
+    flex: 50%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .row {
+    flex: 80%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
